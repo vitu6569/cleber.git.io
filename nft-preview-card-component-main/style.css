@@ -1,0 +1,133 @@
+:root {
+    /*### Primary*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*## Neutral*/
+    --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue-mainBG);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.image {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.image {
+    cursor: pointer;
+    position: relative;
+}
+
+.image:hover {
+    opacity: 1;
+}
+
+.container {
+    background-color: var(--Very-dark-blue-cardBG);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.equilibrium {
+    cursor: pointer;
+    color: var(--White);
+    transform-style: var(--Cyan);
+    font-size: 18px;
+}
+
+.equilibrium:hover {
+    color: var(--Cyan);
+}
+
+.subtext {
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
+
+.group-um {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--Soft-blue);
+    padding: 1rem;
+    display: grid;
+    gap: 10px;
+}
+.eth{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.ethereum {
+    margin-left: 20px;
+    color: var(--Cyan);
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.clock {
+    display: grid;
+    margin-left: 10px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.days {
+    align-items: center;
+    justify-content: end;
+    color: var(--Soft-blue);
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.creation {
+    color: var(--Soft-blue);
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.avatar {
+    margin: 10px;
+    border: 1px solid var(--White);
+    border-radius: 25px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-top: 1px;
+    background-image: url(images/image-avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.group-two {
+    margin-bottom: 10px;
+}
+
+.name {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.name:hover {
+    color: var(--Cyan);
+}
